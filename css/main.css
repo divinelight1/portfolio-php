@@ -1,0 +1,770 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:700italic);
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: "Josefin Slab";    
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+*{
+    box-sizing:border-box;
+}
+html {
+    background-color: rgb(22, 160, 133);
+}
+::-webkit-scrollbar
+{
+  width: 5px;  /* for vertical scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+  background: #9A9A9B;
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+/* ================SECTION 1=================*/
+.section1{
+    width: 100%;
+    padding: 0;
+      background-color: rgb(22, 160, 133);
+    height: 600px;
+    clear: both;
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background: #0C3B3F;
+    clear: both;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    /*transition: all 0.2s;*/
+}
+header.sticky {
+  font-size: 24px;
+  line-height: 48px;
+  height: 48px;
+  background: #0C3B3F ;
+  /*text-align: left;*/
+  padding-left: 20px;
+  z-index: 9999;
+}
+header.sticky ul {
+    margin-top: 0px;
+    font-size: 19px;
+    margin-right: 100px;
+}
+.sticky #logo {
+    width: 100px;
+    height: 0px;
+    position: fixed;
+    top: -15px;
+}
+#logo{
+    width: 150px;
+    height: 50px;
+    float: left;
+    margin-left: 70px;
+    margin-top: 15px;
+   /* background: #fff;*/
+}
+#logo img{
+    max-width: 100%;
+}
+nav ul{
+    margin-top: 26px;
+    float: right;
+    margin-right: 50px;
+    font-family: "Open Sans";
+    font-size: 21px;
+}
+nav ul li {
+    display: inline;
+   margin-left: 30px;
+}
+
+nav ul li a {
+    display: inline;
+    text-decoration: none;
+    color: #B1B7B8;
+}
+
+a:hover{
+    color: #fff;
+}
+
+.section-content {
+    position: relative;
+    top: 200px;
+    padding: 0;
+    margin: 0 auto;
+     text-shadow: rgb(19, 136, 113) 1px 1px,
+    rgb(19, 136, 113) 2px 2px,
+    rgb(19, 136, 113) 3px 3px,
+    rgb(19, 136, 113) 4px 4px,
+    rgb(19, 136, 113) 5px 5px,
+    rgb(19, 136, 113) 6px 6px,
+    rgb(19, 136, 113) 7px 7px,
+    rgb(19, 136, 113) 8px 8px,
+    rgb(19, 136, 113) 9px 9px,
+    rgb(19, 137, 114) 10px 10px,
+    rgb(19, 138, 114) 11px 11px,
+    rgb(19, 138, 115) 12px 12px,
+    rgb(19, 139, 115) 13px 13px,
+    rgb(19, 140, 116) 14px 14px,
+    rgb(19, 140, 116) 15px 15px,
+    rgb(19, 141, 117) 16px 16px,
+    rgb(19, 142, 118) 17px 17px,
+    rgb(19, 142, 118) 18px 18px,
+    rgb(19, 143, 119) 19px 19px,
+    rgb(20, 144, 119) 20px 20px,
+    rgb(20, 144, 120) 21px 21px,
+    rgb(20, 145, 120) 22px 22px,
+    rgb(20, 146, 121) 23px 23px,
+    rgb(20, 146, 121) 24px 24px,
+    rgb(20, 147, 122) 25px 25px,
+    rgb(20, 148, 123) 26px 26px,
+    rgb(20, 148, 123) 27px 27px,
+    rgb(20, 149, 124) 28px 28px,
+    rgb(20, 150, 124) 29px 29px,
+    rgb(20, 150, 125) 30px 30px,
+    rgb(20, 151, 125) 31px 31px,
+    rgb(21, 152, 126) 32px 32px,
+    rgb(21, 152, 126) 33px 33px,
+    rgb(21, 153, 127) 34px 34px,
+    rgb(21, 154, 128) 35px 35px,
+    rgb(21, 154, 128) 36px 36px,
+    rgb(21, 155, 129) 37px 37px,
+    rgb(21, 156, 129) 38px 38px,
+    rgb(21, 156, 130) 39px 39px,
+    rgb(21, 157, 130) 40px 40px,
+    rgb(21, 158, 131) 41px 41px,
+    rgb(21, 158, 131) 42px 42px,
+    rgb(21, 159, 132) 43px 43px,
+    rgb(22, 160, 133) 44px 44px;
+   background-color: rgb(22, 160, 133);
+  width: 100%;
+  font-size: 48px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+/*============   SECTION 2 ==============*/
+
+
+.section2{
+    height: 700px;
+    background: #fff;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.section3{
+    height: 653px !important;
+}
+.section-content2{
+    color: rgb(22, 160, 133);
+    line-height: 10px;
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    top: 80px;
+    position: relative;
+    text-shadow: rgb(201, 201, 201) 1px 1px,
+    rgb(201, 201, 201) 2px 2px,
+    rgb(201, 201, 201) 3px 3px,
+    rgb(201, 201, 201) 4px 4px,
+    rgb(203, 203, 203) 5px 5px,
+    rgb(206, 206, 206) 6px 6px,
+    rgb(209, 209, 209) 7px 7px,
+    rgb(212, 212, 212) 8px 8px,
+    rgb(215, 215, 215) 9px 9px,
+    rgb(218, 218, 218) 10px 10px,
+    rgb(220, 220, 220) 11px 11px,
+    rgb(223, 223, 223) 12px 12px,
+    rgb(226, 226, 226) 13px 13px,
+    rgb(229, 229, 229) 14px 14px,
+    rgb(232, 232, 232) 15px 15px,
+    rgb(235, 235, 235) 16px 16px,
+    rgb(237, 237, 237) 17px 17px,
+    rgb(240, 240, 240) 18px 18px,
+    rgb(243, 243, 243) 19px 19px,
+    rgb(246, 246, 246) 20px 20px,
+    rgb(249, 249, 249) 21px 21px,
+    rgb(252, 252, 252) 22px 22px,
+    rgb(255, 255, 255) 23px 23px;
+    width: 85%;
+    margin: auto;
+}
+
+.projects{
+    text-shadow:none !important;
+    width: 32%;
+   background:  rgb(22, 160, 133);
+   color: #fff;
+   font-size: 16px;
+   height: 400px;
+   float: left;
+   margin-right: 10px;
+}
+
+
+.projects h4{
+    font-family: "Open Sans";
+    font-weight: lighter;
+    font-size: 21px;
+}
+.projects p{
+    line-height: 15px;
+    padding: 0px 21px;
+    font-family: "Open Sans";
+    font-size: 14px;
+    text-align: center;
+}
+
+.projects img {
+    width: 100%;
+}
+.about-me{
+    height: 700px;
+}
+.section-content3{
+    color: #fff;
+    line-height: 10px;
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    top: 80px;
+    position: relative;
+     text-shadow: rgb(19, 136, 113) 1px 1px,
+    rgb(19, 136, 113) 2px 2px,
+    rgb(19, 136, 113) 3px 3px,
+    rgb(19, 136, 113) 4px 4px,
+    rgb(19, 136, 113) 5px 5px,
+    rgb(19, 136, 113) 6px 6px,
+    rgb(19, 136, 113) 7px 7px,
+    rgb(19, 136, 113) 8px 8px,
+    rgb(19, 136, 113) 9px 9px,
+    rgb(19, 137, 114) 10px 10px,
+    rgb(19, 138, 114) 11px 11px,
+    rgb(19, 138, 115) 12px 12px,
+    rgb(19, 139, 115) 13px 13px,
+    rgb(19, 140, 116) 14px 14px,
+    rgb(19, 140, 116) 15px 15px,
+    rgb(19, 141, 117) 16px 16px,
+    rgb(19, 142, 118) 17px 17px,
+    rgb(19, 142, 118) 18px 18px,
+    rgb(19, 143, 119) 19px 19px,
+    rgb(20, 144, 119) 20px 20px,
+    rgb(20, 144, 120) 21px 21px,
+    rgb(20, 145, 120) 22px 22px,
+    rgb(20, 146, 121) 23px 23px,
+    rgb(20, 146, 121) 24px 24px,
+    rgb(20, 147, 122) 25px 25px,
+    rgb(20, 148, 123) 26px 26px,
+    rgb(20, 148, 123) 27px 27px,
+    rgb(20, 149, 124) 28px 28px,
+    rgb(20, 150, 124) 29px 29px,
+    rgb(20, 150, 125) 30px 30px,
+    rgb(20, 151, 125) 31px 31px,
+    rgb(21, 152, 126) 32px 32px,
+    rgb(21, 152, 126) 33px 33px,
+    rgb(21, 153, 127) 34px 34px,
+    rgb(21, 154, 128) 35px 35px,
+    rgb(21, 154, 128) 36px 36px,
+    rgb(21, 155, 129) 37px 37px,
+    rgb(21, 156, 129) 38px 38px,
+    rgb(21, 156, 130) 39px 39px,
+    rgb(21, 157, 130) 40px 40px,
+    rgb(21, 158, 131) 41px 41px,
+    rgb(21, 158, 131) 42px 42px,
+    rgb(21, 159, 132) 43px 43px,
+    rgb(22, 160, 133) 44px 44px;
+    width: 85%;
+    margin: auto;
+}
+
+.first-half{
+    width: 49%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    float: left;
+    margin: 90px 0 0 0;
+
+}
+.img-holder{
+    width: 100%;
+    height: 80%;
+    margin: auto;
+    padding: 0;
+    margin-left: 20px;
+}
+.img-holder img{
+    max-width: 100%;
+    min-width: 100%;
+}
+.second-half{
+    width: 49%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    float: left;
+    margin: 90px 0 0 0;
+}
+.second-half p {
+    width: 80%;
+    margin: 12px auto auto auto;
+    padding: 0;
+    color: #fff;
+    font-family: "Open Sans";
+    text-align: justify;
+}
+.section-content4{
+    color: rgb(22, 160, 133);
+    line-height: 10px;
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    text-shadow: rgb(201, 201, 201) 1px 1px,
+    rgb(201, 201, 201) 2px 2px,
+    rgb(201, 201, 201) 3px 3px,
+    rgb(201, 201, 201) 4px 4px,
+    rgb(203, 203, 203) 5px 5px,
+    rgb(206, 206, 206) 6px 6px,
+    rgb(209, 209, 209) 7px 7px,
+    rgb(212, 212, 212) 8px 8px,
+    rgb(215, 215, 215) 9px 9px,
+    rgb(218, 218, 218) 10px 10px,
+    rgb(220, 220, 220) 11px 11px,
+    rgb(223, 223, 223) 12px 12px,
+    rgb(226, 226, 226) 13px 13px,
+    rgb(229, 229, 229) 14px 14px,
+    rgb(232, 232, 232) 15px 15px,
+    rgb(235, 235, 235) 16px 16px,
+    rgb(237, 237, 237) 17px 17px,
+    rgb(240, 240, 240) 18px 18px,
+    rgb(243, 243, 243) 19px 19px,
+    rgb(246, 246, 246) 20px 20px,
+    rgb(249, 249, 249) 21px 21px,
+    rgb(252, 252, 252) 22px 22px,
+    rgb(255, 255, 255) 23px 23px;
+    width: 85%;
+    margin: auto;
+    margin-top: 120px;
+}
+
+/* SLIDER*/ 
+#carousel {
+        width: 680px;
+        overflow:hidden;
+        margin-left: 8%;
+        padding: 0;
+        margin-top: 150px;
+        margin-bottom: 0px;
+        color: #fff !important;
+    }
+
+    #carousel ul {
+        width: 2720px;
+        padding: 0;
+        margin: 0;
+    }
+
+    #carousel ul li {
+        width:680px;
+        text-align: center;
+        height: 280px;
+        list-style: none;
+        float:  left;
+    }
+    .author{
+        float: right;
+    }
+    .left-section{
+        width: 65%;
+        margin: auto;
+        padding: 0;
+        float: left;
+        background-color: rgba(22,160,133,0.5);
+    }
+    .right-section{
+        width: 35%;
+    float: right;
+    margin: auto;
+    padding: 0;
+    height: 430px;
+    background: rgba(255, 116, 0, 0.5);
+    right: 0px;
+    position: relative;
+    }
+    #carousel h5{
+            font-size: 17px;
+    line-height: 15px;
+    font-weight: 500;
+    font-family: arial;
+    }
+
+    @font-face {
+    font-family: 'YanoneKaffeesatzRegular';
+    src: url('yanonekaffeesatz-regular-webfont.eot');
+    src: url('yanonekaffeesatz-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('yanonekaffeesatz-regular-webfont.woff') format('woff'),
+    url('yanonekaffeesatz-regular-webfont.ttf') format('truetype'),
+    url('yanonekaffeesatz-regular-webfont.svg#YanoneKaffeesatzRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+footer {background: #ccc url('../images/bg_out.png'); color: #7c7873; font-family: 'YanoneKaffeesatzRegular';}
+footer p {text-shadow:0 1px 0 #fff; font-size:24px;}
+#wrap {width:530px; margin:20px auto 0; height:1000px;}
+footer h1 {margin-bottom:20px; text-align:center;font-size:48px; text-shadow:0 1px 0 #ede8d9; }
+
+
+    #form_wrap { overflow:hidden; height:446px; position:relative; top:0px;
+        -webkit-transition: all 1s ease-in-out .3s;
+        -moz-transition: all 1s ease-in-out .3s;
+        -o-transition: all 1s ease-in-out .3s;
+        transition: all 1s ease-in-out .3s;}
+    
+    #form_wrap:before {content:"";
+        position:absolute;
+        bottom:128px;left:0px;
+        background:url('../images/before.png');
+        width:530px;height: 316px;}
+    
+    #form_wrap:after {content:"";position:absolute;
+        bottom:0px;left:0;
+        background:url('../images/after.png');
+        width:530px;height: 260px; }
+
+    #form_wrap.hide:after, #form_wrap.hide:before {display:none; }
+    #form_wrap:hover {height:866px;top:-200px;}
+
+
+    form {background:#f7f2ec url('../images/letter_bg.png'); 
+        position:relative;top:200px;overflow:hidden;
+        height:200px;width:400px;margin:0px auto;padding:20px; 
+        border: 1px solid #fff;
+        border-radius: 3px; 
+        -moz-border-radius: 3px; -webkit-border-radius: 3px;
+        box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 27px #fff;
+        -moz-box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 14px #fff;
+        -webkit-box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 27px #fff;
+        -webkit-transition: all 1s ease-in-out .3s;
+        -moz-transition: all 1s ease-in-out .3s;
+        -o-transition: all 1s ease-in-out .3s;
+        transition: all 1s ease-in-out .3s;}
+
+
+        #form_wrap:hover form {height:530px;}
+
+    footer    label {
+            margin: 11px 20px 0 0; 
+            font-size: 16px; color: #b3aba1;
+            text-transform: uppercase; 
+            text-shadow: 0px 1px 0px #fff;
+        }
+
+        input[type=text], textarea {
+            font: 14px normal normal uppercase helvetica, arial, serif;
+            color: #7c7873;background:none;
+            width: 380px; height: 36px; padding: 0px 10px; margin: 0 0 10px 0;
+            border:1px solid #f8f5f1;
+            -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+            -moz-box-shadow: inset 0px 0px 1px #726959;
+            -webkit-box-shadow:  inset 0px 0px 1px #b3a895; 
+            box-shadow:  inset 0px 0px 1px #b3a895;
+        }   
+
+        textarea { height: 80px; padding-top:14px;}
+
+        textarea:focus, input[type=text]:focus {background:rgba(255,255,255,.35);}
+
+        #form_wrap input[type=submit] {
+            position:relative;font-family: 'YanoneKaffeesatzRegular'; 
+            font-size:24px; color: #7c7873;text-shadow:0 1px 0 #fff;
+            width:100%; text-align:center;opacity:0;
+            background:none;
+            cursor: pointer;
+            -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; 
+            -webkit-transition: opacity .6s ease-in-out 0s;
+            -moz-transition: opacity .6s ease-in-out 0s;
+            -o-transition: opacity .6s ease-in-out 0s;
+            transition: opacity .6s ease-in-out 0s;
+        }
+
+        #form_wrap:hover input[type=submit] {z-index:1;opacity:1;
+            -webkit-transition: opacity .5s ease-in-out 1.3s;
+            -moz-transition: opacity .5s ease-in-out 1.3s;
+            -o-transition: opacity .5s ease-in-out 1.3s;
+            transition: opacity .5s ease-in-out 1.3s;}
+
+            #form_wrap:hover input:hover[type=submit] {color:#435c70;}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
